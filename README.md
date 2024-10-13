@@ -1,6 +1,20 @@
-# FoodWebsiteProject
+## Bistro Bliss restaurant Website
+
+This project was developed as the final project for the Orange - AMIT scholarship program in the Mean-stack track. The program ran from September 1st, 2024, to September 27th, 2024.
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.2.3.
+
+The project is a restaurant website that utilizes a Node.js backend with Express.js for handling requests and MongoDB for data storage.
+
+**Backend repository:** [https://github.com/abdallaroshdy/Bistro-Bliss-restaurant-back-end.git](https://github.com/abdallaroshdy/Bistro-Bliss-restaurant-back-end.git)
+
+**Features:**
+
+* **User Authentication:**  Users can register and log in to the website. 
+* **Menu Display:** The website displays the restaurant's menu with categories for easy browsing.
+* **Booking Table:** Users can book tables for specific dates and times.
+* **Contact Form:** Users can contact the restaurant with questions or inquiries.
+* **Admin Dashboard:**  Administrators can manage the menu, view bookings, and manage contact messages.
 
 ## Development server
 
