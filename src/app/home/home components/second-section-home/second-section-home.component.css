@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Quicksand:wght@300..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Quicksand:wght@300..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Quicksand:wght@300..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&family=SUSE:wght@100..800&display=swap');
+
+.second-section{
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 90px 0px;
+}
+
+.second-section>h1{
+  margin-bottom: 30px;
+  font-weight: 520;
+  font-family: 'Playfair Display';
+}
+
+.second-section>div{
+  /* flex-direction: column; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.container{
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 280px;
+  margin: 10px 10px;
+
+  /* background-color: aqua; */
+  /* border-color: black; */
+  border: 2px solid rgba(169, 169, 169, 0.236);
+  border-radius: 20px;
+
+  font-weight: 500;
+}
+.container div{
+  background-color:  rgba(169, 169, 169, 0.236);
+  padding: 20px;
+  border-radius: 55px;
+  margin: 22px 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container img{
+  height: 60px;
+  object-fit: contain;
+}
+
+.container>h3{
+  font-family: "SUSE";
+}
+
+
+.container>p{
+  font-weight: 330;
+  padding: 22px 20px;
+  font-family: "Rubik";
+
+}
+
+
+.container>a
+{
+  text-decoration: none;
+  color: rgb(176, 31, 31);
+  font-family: "Rubik";
+  font-size: 14px;
+  margin-bottom: 20px;
+  cursor: pointer;
+}

@@ -1,0 +1,18 @@
+<div class="container">
+  <h2>Contact Details</h2>
+  <a routerLink = "/adminPage"><img src="turn-left.png" alt=""></a>
+
+
+    @for (item of contact; track $index) {
+      <div class="book-card" >
+        <div class="book-details">
+          <p><strong>Name:</strong>  {{item.name}} </p>
+          <p><strong>Email:</strong> {{ item.email}} </p>
+          <p><strong>Date:</strong> {{getDate(item.date)}} </p>
+          <p><strong>Subject:</strong> {{ item.subject}} </p>
+          <p><strong>Message:</strong> {{ item.message}} </p>
+        </div>
+    </div>
+    }
+
+</div>

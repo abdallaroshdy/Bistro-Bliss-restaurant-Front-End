@@ -1,0 +1,27 @@
+
+<div class="login">
+  <div class="container">
+    <h2>LOGIN</h2>
+    <form >
+        <input [(ngModel)]="username" type="text"  name="email" placeholder="Username" class="input-field" required>
+        <input [(ngModel)]="password" type="password"  name="password" placeholder="Password" class="input-field" required>
+        <div class="btns">
+            <input type="submit" (click)="login()"  value="Login">
+
+            @if(errormessage){
+              <div class="alert alert-danger">
+                {{ errormessage }}
+            </div>
+            }
+
+            <p>Don't have an account Yet ?</p>
+            <div>
+                <!-- <input type="button" class="mb-3 cursor-pointer" value="Register As Company" (click)="registerAsCompany()"> -->
+                <input type="button" (click)="onRegsitClick()"  value="Register" >
+            </div>
+        </div>
+    </form>
+  </div>
+
+</div>
+

@@ -1,0 +1,29 @@
+<app-nav></app-nav>
+
+<div class="section-1">
+  <h1>Our Menu</h1>
+  <p>We consider all the drivers of change gives you the components<br> you need to change to create a truly happens.</p>
+  <div class="buttons">
+    <button (click)="filterCategory('All')" [ngClass]="{'red-button': catigory === 'All'}">All</button>
+    <button (click)="filterCategory('Breakfast')" [ngClass]="{'red-button': catigory === 'Breakfast'}">Breakfast</button>
+    <button (click)="filterCategory('Main Dish')" [ngClass]="{'red-button': catigory === 'Main Dish'}">Main Dishes</button>
+    <button (click)="filterCategory('Drink')" [ngClass]="{'red-button': catigory === 'Drink'}">Drinks</button>
+    <button (click)="filterCategory('Dessert')" [ngClass]="{'red-button': catigory === 'Dessert'}">Desserts</button>
+
+  </div>
+
+  <div class="menu">
+    @for (item of filteredItems; track $index) {
+
+      <div class="container">
+        <img [src]= "'http://localhost:3220/' + item.imgUrl" alt="">
+        <h2>{{item.price}} $</h2>
+        <h3>{{item.title}}</h3>
+        <p>{{item.desc}}</p>
+      </div>
+    }
+  </div>
+</div>
+
+
+<app-footer></app-footer>

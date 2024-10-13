@@ -1,0 +1,53 @@
+.container {
+  max-width: 600px; /* Set a max width for better layout */
+  margin: auto; /* Center the container */
+  padding: 20px; /* Add padding */
+  border: 1px solid #dee2e6; /* Border for the container */
+  border-radius: 8px; /* Rounded corners */
+  background-color: #f9f9f9; /* Light background color */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  position: relative;
+}
+
+a {
+  position: absolute;
+  top: 20px;
+  right: 25px;
+  border-radius: 5px;
+  transition: background-color 0.15s, box-shadow 0.15s; /* Smooth transition for hover effects */
+}
+
+a > img {
+  height: 50px;
+  margin: 2px;
+}
+
+/* New hover styles */
+a:hover {
+  background-color: rgba(255, 255, 255, 0.455); /* Light background color */
+  box-shadow: 0 5px 12px rgba(0, 0, 0, 0.3); /* Shadow effect */
+}
+
+
+.form-group {
+  margin-bottom: 1.5rem; /* Space between form groups */
+}
+
+.btn-custom {
+  background-color: #AD343E; /* Custom button color */
+  color: white; /* White text color */
+  border: none; /* Remove border */
+  padding: 10px 20px; /* Padding for button */
+  border-radius: 5px; /* Rounded corners */
+  transition: background-color 0.3s ease; /* Transition for hover */
+  width: 100%; /* Full width */
+}
+
+.btn-custom:hover {
+  background-color: #931f29; /* Darker shade on hover */
+}
+
+.img-fluid {
+  max-width: 100%; /* Responsive image */
+  height: auto; /* Maintain aspect ratio */
+}

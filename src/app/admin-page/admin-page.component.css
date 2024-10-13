@@ -1,0 +1,118 @@
+/* Top Icon Bar */
+#add {
+  height: 60px;
+  cursor: pointer;
+}
+
+.redButton {
+  margin-top: 50px;
+  margin-bottom: 20px;
+}
+
+.icon {
+  height: 60px;
+  cursor: pointer;
+}
+
+/* Section Menu */
+.section-1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+h1 {
+  font-family: 'Playfair Display';
+  font-size: 60px;
+  font-weight: 400;
+}
+
+.buttons {
+  margin-top: 40px;
+  margin-bottom: 60px;
+}
+
+.buttons button {
+  border-radius: 30px;
+  padding: 18px 30px;
+  font-size: 15px;
+  font-weight: 700;
+  font-family: "DM Sans";
+  border-color: rgba(0, 0, 0, 0.141);
+  cursor: pointer;
+  margin: 20px 10px;
+  width: 160px;
+}
+
+.red-button {
+  color: white;
+  background-color: brown;
+  border: 0;
+}
+
+/* Menu Cards */
+.menu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.container {
+  margin: 0 10px;
+  margin-bottom: 30px;
+  width: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  font-family: "DM Sans";
+  border: 2px solid rgba(98, 98, 98, 0.268);
+  border-radius: 20px;
+  overflow-x: hidden;
+  padding: 10px;
+  background-color: #f9f9f9;
+  transition: transform 0.3s;
+}
+
+.container:hover {
+  transform: scale(1.05);
+}
+
+.container img {
+  object-fit: cover;
+  width: 100%;
+  height: 200px;
+  border-radius: 20px 20px 0 0;
+}
+
+.container h2 {
+  color: #AD343E;
+  margin: 20px 0px;
+  font-size: 22px;
+}
+
+.container h3 {
+  margin: 10px 0px;
+  font-size: 20px;
+}
+
+.icons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  padding: 10px 0;
+}
+
+.icons img {
+  height: 40px;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+.icons img:hover {
+  transform: scale(1.2);
+}

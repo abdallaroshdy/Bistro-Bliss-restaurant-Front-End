@@ -1,0 +1,27 @@
+<div class="book-list">
+  <a routerLink = "/adminPage"><img src="turn-left.png" alt=""></a>
+  <h2>Book List</h2>
+  <table class="book-table">
+    <thead>
+      <tr>
+        <th>Email</th>
+        <th>Phone Number</th>
+        <th>Date &nbsp;<img src="sort.png" alt="" (click)="sortDate()"></th>
+        <th>Time</th>
+        <th>Total Persons</th>
+      </tr>
+    </thead>
+    <tbody>
+      @for (book of Books; track $index) {
+        <tr>
+          <td> {{book.email}} </td>
+          <td> {{book.phonenumber}} </td>
+          <td> {{ getDate(book.date)}} </td>
+          <td> {{ getTime(book.date)}}</td>
+          <td> {{book.totalPersons}} </td>
+        </tr>
+      }
+
+    </tbody>
+  </table>
+</div>

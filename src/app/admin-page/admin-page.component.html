@@ -1,0 +1,31 @@
+<div class="d-flex justify-content-center align-items-center gap-5 redButton">
+  <img (click)="navToContacts()" class="icon" src="operator.png" alt="Operator">
+  <img (click)="navToBooks()" class="icon" src="time.png" alt="Time">
+  <img (click)="navToAdd()" class="icon" src="add.png" alt="Add">
+  <button (click)="deleteCookie()" class="btn btn-danger m-2 red-button">Logout</button>
+</div>
+
+<div class="section-1">
+  <h1>Menu</h1>
+  <div class="buttons">
+    <button (click)="filterCategory('All')" [ngClass]="{'red-button': catigory === 'All'}">All</button>
+    <button (click)="filterCategory('Breakfast')" [ngClass]="{'red-button': catigory === 'Breakfast'}">Breakfast</button>
+    <button (click)="filterCategory('Main Dish')" [ngClass]="{'red-button': catigory === 'Main Dish'}">Main Dishes</button>
+    <button (click)="filterCategory('Drink')" [ngClass]="{'red-button': catigory === 'Drink'}">Drinks</button>
+    <button (click)="filterCategory('Dessert')" [ngClass]="{'red-button': catigory === 'Dessert'}">Desserts</button>
+  </div>
+
+  <div class="menu">
+    @for (item of filteredItems; track $index) {
+      <div class="container">
+        <img [src]="'http://localhost:3220/' + item.imgUrl" alt="{{item.title}}">
+        <h2>{{item.price}} $</h2>
+        <h3>{{item.title}}</h3>
+        <div class="icons">
+          <img src="delete.png" alt="Delete" (click)="deleteItem(item._id)">
+          <img src="update.png" alt="Update" (click)="getItem(item._id)">
+        </div>
+      </div>
+    }
+  </div>
+</div>

@@ -1,0 +1,89 @@
+@if(!otpPage){
+
+  <div class="register">
+    <div class="container">
+        <h2>Register</h2>
+        <form (ngSubmit)="makeNewUser()" #registrationForm="ngForm">
+
+            <div class="input-group">
+              <input [(ngModel)]="firstName" type="text" name="fname" placeholder="First Name" required>
+              <input [(ngModel)]="lastName" type="text" name="lname" placeholder="Last Name" required>
+            </div>
+            <input [(ngModel)]="phonenum" type="tel" name="phone" placeholder="Phone Number" required>
+
+            <select [(ngModel)]="gender" name="gender" required>
+                <option value="" disabled selected>Select Gender</option>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+            </select>
+
+            <input [(ngModel)]="email" type="email" name="email" placeholder="Email" required>
+            <input [(ngModel)]="password1" type="password" name="password" placeholder="Password" required>
+            <input [(ngModel)]="password2" type="password" name="confirmPassword" placeholder="Confirm Password" required>
+
+            <button type="submit" [disabled]="!registrationForm.valid">Register</button>
+
+
+            @if(errormessage){
+              <div class="alert alert-danger">
+                {{ errormessage }}
+            </div>
+            }
+
+            @if(successMessage  ){
+
+              <div class="alert alert-success">
+                <strong>Success!</strong> {{ successMessage }}
+              </div>
+            }
+
+
+            <div class="login-prompt">
+                <p>Already Have An Account?</p>
+                <button type="button" (click)="onLoginClick()">Login</button>
+            </div>
+        </form>
+    </div>
+  </div>
+
+}@else {
+
+  <div class="otp-page">
+    <div class="container">
+      <h2>Enter OTP</h2>
+      <form (ngSubmit)="verifyOtp()" #otpForm="ngForm">
+        <p>We have sent an OTP to your registered phone number.</p>
+
+        <input
+          [(ngModel)]="otp"
+          type="number"
+          name="otp"
+          placeholder="Enter OTP"
+          maxlength="4"
+          required
+        />
+
+        <button type="submit" [disabled]="!otpForm.valid">Verify OTP</button>
+
+        @if(otpErrorMessage) {
+          <div class="alert alert-danger">
+            {{ otpErrorMessage }}
+          </div>
+        }
+
+        @if(otpSuccessMessage) {
+          <div class="alert alert-success">
+            <strong>Success!</strong> {{ otpSuccessMessage }}
+          </div>
+        }
+
+        <div class="resend-otp">
+          <p>Didn't receive the OTP?</p>
+          <button type="button" (click)="resendOtp()">Resend OTP</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+
+}

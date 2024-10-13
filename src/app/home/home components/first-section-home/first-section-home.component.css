@@ -1,0 +1,47 @@
+.first-section{
+  width: 100vw;
+  height: calc(100vh + 105px);
+  background-image: url("./../../../../../public/a.jpg");
+
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position:center ;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+
+}
+
+
+.first-section h1{
+  width: 520px;
+  font-size: 90px;
+  font-family: 'Playfair Display';
+  font-weight: 500;
+  /* background-color: aqua; */
+}
+
+.first-section p{
+  width: 400px;
+  margin-top: 20px;
+  font-size: 18px;
+}
+
+
+.first-section button{
+  border-radius: 30px;
+  padding: 18px 30px;
+  font-size: 15px;
+  border-color: black;
+  cursor: pointer;
+  margin: 20px 10px;
+}
+
+
+#red-button{
+  color: white;
+  background-color: brown;
+  border:0;
+}

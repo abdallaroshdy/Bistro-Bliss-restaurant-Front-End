@@ -1,0 +1,68 @@
+<app-nav></app-nav>
+
+<div class="book">
+  <h1>Book A Table</h1>
+  <p>We consider all the drivers of change gives you the components <br> you need to change to create a truly happens.</p>
+
+  <div class="space"></div>
+
+  <div class="form-container">
+    <form (submit)="onSubmit()">
+      <!-- Date and Time Inputs -->
+      <div class="each2inputs">
+        <div class="form-group">
+          <label for="date">Date</label>
+          <input type="date" id="date" [(ngModel)]="selectedDate" name="date" required>
+        </div>
+
+        <div class="form-group">
+          <label for="time">Time</label>
+          <select id="time" [(ngModel)]="selectedTime" name="time" required>
+            <option>17:00</option>
+            <option>17:30</option>
+            <option>18:00</option>
+            <option>18:30</option>
+            <option>19:00</option>
+            <option>19:30</option>
+            <option>20:00</option>
+            <option>20:30</option>
+            <option>21:00</option>
+            <option>21:30</option>
+            <option>22:00</option>
+            <option>22:30</option>
+            <option>23:00</option>
+            <option>23:30</option>
+          </select>
+        </div>
+      </div>
+
+      <!-- Total Person Input -->
+      <div class="form-group">
+        <label for="total-person" >Total Person</label>
+        <select id="total-person" [(ngModel)]="totalPersons" name="total-person"  type="number" required>
+          <option value="1">1 Person</option>
+          <option value="2">2 Persons</option>
+          <option value="3">3 Persons</option>
+          <option value="4">4 Persons</option>
+          <option value="3">5 Persons</option>
+          <option value="4">6 Persons</option>
+        </select>
+      </div>
+
+
+
+      @if(showAlert){
+        <div  class="alert alert-{{messageType}}" role="alert">
+          {{ alertMessage }}
+        </div>
+      }
+
+      <!-- Submit Button -->
+      <button type="submit" class="submit-btn">Book A Table</button>
+    </form>
+  </div>
+</div>
+
+<div class="map"></div>
+
+<app-footer></app-footer>

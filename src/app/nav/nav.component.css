@@ -1,0 +1,104 @@
+nav{
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 100;
+
+
+}
+.topnav{
+  width: 100vw;
+  height: 35px;
+  background-color: rgb(64, 64, 64);
+  position: relative;
+  left: 0;
+  top: 0;
+}
+
+
+.connections{
+
+
+  width: 100vw;
+  height: 35px;
+  padding: 0px 180px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  color: white;
+
+}
+
+.connections img{
+  height: 25px;
+  background-color: white;
+  border-radius: 25px;
+  margin: 3px;
+}
+
+.second-nav{
+  width: 100vw;
+  height: 70px;
+  background-color: rgb(255, 255, 255);
+  position: relative;
+  left: 0;
+
+}
+
+.second-nav>div{
+
+  width: 100vw;
+  height: 70px;
+  /* margin: 0px 40px; */
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.icon{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* background-color:aqua ; */
+}
+
+.icon>h1{
+margin-left: 10px;
+font-weight: 600; /* Semi-bold */
+font-style: italic; /* Italic */
+color: rgb(64, 64, 64);
+font-size: 40px;
+}
+
+.second-nav img{
+  /* background-color: rgb(255, 255, 255);
+  color: white; */
+  height: 55px;
+}
+.links{
+  margin: 0;
+}
+.links a{
+  text-decoration: none;
+  color: black;
+  /* margin: 0px 10px; */
+  padding: 8px 15px;
+  font-size: 18px;
+  border-radius: 20px;
+  font-family: "DM Sans";
+}
+
+.links a:hover{
+  background-color: #DBDFD0;
+}
+
+
+.second-nav button{
+  border-radius: 20px;
+  padding: 8px 15px;
+  font-size: 18px;
+  border-color: black;
+  cursor: pointer;
+}
